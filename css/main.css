@@ -16,4 +16,112 @@
 body {
   font-family: 'Cabin', sans-serif;
 }
-
+.rover-header-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-color: #cfd7de;
+  border-style: solid;
+  
+}
+.rover-header-image{
+  margin-right: 30px;
+}
+.rover-header-left{
+  display: flex;
+}
+.rover-header-link {
+  text-decoration: none;
+  padding-top: 20px;
+  margin-left: 20px;
+  color: rgb(97, 91, 91);
+}
+.rover-header-right {
+  padding-top: 16px;
+  padding-right: 20px;
+}
+/*  banner mid */
+.rover-hero-container{
+  background-image: url("/img/hero.jpg");
+  height: 600px;
+  background-size: cover;
+}
+.box{
+  /* border-style: solid; */
+  width: 500px;
+  height: 400px;
+  position: relative;
+  top: 100px;
+  left: 150px;
+}
+.rover-hero-title{
+  font-size: 50px;
+  font-weight: 700;
+  color: rgb(97, 91, 91);
+}
+.box_inner{
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 20px;
+  color: rgb(97, 91, 91);
+}
+.rover-button a{
+  background-color: rgb(15, 199, 153);
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  padding-left: 150px;
+  padding-right: 150px;
+  border-radius: 5px;
+}
+/* icons in the middle */
+.services{
+  text-align: center;
+  font-size: 30px;
+  margin-top: 50px;
+  color: rgb(19, 18, 18);
+}
+.rover-fact-indiv{
+  display: flex;
+}
+.rover-two-boxes-container{
+  display: flex;
+  border: solid;
+  margin: 50px;
+}
+.icon_text{
+  /* border-style: solid; */
+  position: relative;
+  left: 15px;  
+}
+.rover-cta-header{
+  display: flex;
+  /* border-style: solid; */
+  background-color: rgb(224, 241, 241);
+  padding-left: 20px;
+}
+span{
+  font-weight: bolder;
+}
+.rover{
+  /* border-style: solid; */
+  position: relative;
+  left: 15px;
+}
+.rover-cta-box{
+  border-style: solid;
+  height: 400px;
+  width: 500px;
+  position: relative;
+  left: 200px;
+  top: 50px;
+}
+.rover-cta a{
+  text-decoration: none;
+  background-color: rgb(15, 199, 153);
+  color: white;
+  padding-left: 158px;
+  padding-right: 158px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
