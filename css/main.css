@@ -20,8 +20,8 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 10px;
-  border-color: #cfd7de;
-  border-style: solid;
+  /* border-color: #cfd7de;
+  border-style: solid; */
   
 }
 .rover-header-image{
@@ -37,14 +37,28 @@ body {
   color: rgb(97, 91, 91);
 }
 .rover-header-right {
+  /* border: solid; */
   padding-top: 16px;
-  padding-right: 20px;
+  position: relative;
+  left: 250px;
+}
+
+@media screen and (max-width: 425px){
+.rover-header-image{
+  position: absolute;
+  width: 30%;
+}
+.rover-header-link{
+  display: none;
+}
+
 }
 /*  banner mid */
 .rover-hero-container{
   background-image: url("/img/hero.jpg");
   height: 600px;
   background-size: cover;
+  margin-top: 0px;
 }
 .box{
   /* border-style: solid; */
@@ -86,13 +100,19 @@ body {
 }
 .rover-two-boxes-container{
   display: flex;
-  border: solid;
+  /* border: solid; */
   margin: 50px;
+  margin-bottom: 140px;
 }
 .icon_text{
   /* border-style: solid; */
+  height: 60px;
   position: relative;
-  left: 15px;  
+  left: 15px; 
+  top: 20px 
+}
+.icon_text h3{
+  margin: 0;
 }
 .rover-cta-header{
   display: flex;
@@ -109,12 +129,17 @@ span{
   left: 15px;
 }
 .rover-cta-box{
-  border-style: solid;
+  /* border-style: solid; */
   height: 400px;
   width: 500px;
   position: relative;
   left: 200px;
   top: 50px;
+}
+.rover-facts{
+  padding-bottom: 20px;
+  padding-top: 30px;
+  line-height: 30px;
 }
 .rover-cta a{
   text-decoration: none;
@@ -124,4 +149,78 @@ span{
   padding-right: 158px;
   padding-top: 10px;
   padding-bottom: 10px;
+  border-radius: 5px;
 }
+.rover-protections{
+  padding-top: 40px;
+  text-align: center;
+}
+.rover-protections a{
+  text-decoration: none;
+  color: rgb(66, 180, 180);
+}
+/* Part middle 2 */
+.rover-action-shot{
+  background-image: url("/img/lady-with-her-dogs.jpg");
+  width: 1000px;
+  height: 500px;
+  background-size: cover;
+  position: relative;
+  left: 170px;
+}
+.rover-action-quote-container{
+  
+  box-shadow: 5px 10px 18px #888888;;
+  width: 400px;
+  height: 300px;
+  background-color: rgb(241, 238, 233);
+  position: relative;
+  left: 100px;
+  top: -30px
+  
+}
+.rover-quote{
+  word-spacing: 5px;
+  line-height: 1.2;
+  font-size: 25px;
+  font-weight: 900;
+  margin: 10px;
+  padding-top: 30px;
+}
+.dog{
+  margin: 10px;
+  margin-top: 90px;
+  word-spacing: 4px;
+}
+.dog a{
+  text-decoration: none;
+  color: rgb(66, 180, 180);
+  
+}
+.quote{
+  color: rgb(97, 91, 91);
+}
+.rover-123-container-title{
+  text-align: center;
+  margin-top: 70px;
+  font-size: 30px;
+}
+.rover-123-item-container{
+  display: flex;
+  justify-content: space-between;
+  /* border: solid; */
+  margin: 70px;
+}
+.box2{
+  /* border: solid; */
+  width: 300px;
+  text-align: center;
+}
+.rover-123-item{
+  /* border: solid; */
+  text-align: center;
+}
+.bottom{
+  color: rgb(0, 91, 175);
+}
+
