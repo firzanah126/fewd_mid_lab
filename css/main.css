@@ -42,8 +42,11 @@ body {
   position: relative;
   left: 250px;
 }
+.hambuger-icon{
+  display: none;
+}
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 500px){
 .rover-header-image{
   position: absolute;
   width: 30%;
@@ -51,9 +54,11 @@ body {
 .rover-header-link{
   display: none;
 }
-
+.hambuger-icon{
+  display: block;   
 }
-/*  banner mid */
+}
+/*------  banner mid --------*/
 .rover-hero-container{
   background-image: url("/img/hero.jpg");
   height: 600px;
@@ -88,12 +93,54 @@ body {
   padding-right: 150px;
   border-radius: 5px;
 }
-/* icons in the middle */
+.rover-button2{
+  display: none;
+}
+
+@media screen and (max-width: 500px){
+  .rover-hero-container{
+    background-image: none;  
+  } 
+
+  .box {
+    position: relative;
+    left: 10px;
+    bottom: 20px;
+    right: auto;
+    height: 150px;
+    width: 200px;
+  }
+  .box h1{
+    display: none;
+  }
+  .box p{
+    font-size: 15px;
+    color: black;
+  }
+  .rover-button {
+    display: none;
+  }
+  .rover-button2{
+    display: block;
+  }
+  .rover-button2 a{
+    background-color: rgb(15, 199, 153);
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+}
+/*------- icons in the middle------ */
 .services{
   text-align: center;
   font-size: 30px;
   margin-top: 50px;
   color: rgb(19, 18, 18);
+}
+.rover-mobile-hero{
+  display: none;
 }
 .rover-fact-indiv{
   display: flex;
@@ -114,12 +161,16 @@ body {
 .icon_text h3{
   margin: 0;
 }
+.rover-middle-section{
+  display: flex;
+}
 .rover-cta-header{
   display: flex;
   /* border-style: solid; */
   background-color: rgb(224, 241, 241);
   padding-left: 20px;
 }
+
 span{
   font-weight: bolder;
 }
@@ -132,9 +183,7 @@ span{
   /* border-style: solid; */
   height: 400px;
   width: 500px;
-  position: relative;
-  left: 200px;
-  top: 50px;
+  
 }
 .rover-facts{
   padding-bottom: 20px;
@@ -151,6 +200,9 @@ span{
   padding-bottom: 10px;
   border-radius: 5px;
 }
+.rover-cta2{
+  display: none;
+}
 .rover-protections{
   padding-top: 40px;
   text-align: center;
@@ -159,7 +211,87 @@ span{
   text-decoration: none;
   color: rgb(66, 180, 180);
 }
-/* Part middle 2 */
+@media screen and (max-width:500px){
+.services{
+  position: relative;
+  top: -350px;
+  font-size: 20px;
+}
+.rover-mobile-hero{
+  display: block;
+  display: inline;
+  position: relative;
+  left: 20px;
+  top: -350px;
+}
+.icons{
+  /* border: solid; */
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: -350px;
+}
+.icon_text{
+  /* border: solid; */
+  width: 200px;
+  font-size: 10px;
+  position: relative;
+  top: -350px;
+}
+
+.rover-fact-indiv{
+  /* display: block; */
+}
+.rover-two-boxes-container{
+  display: block;
+  /* border: solid; */
+  height: 300px;
+  position: relative;
+  left: 10px;
+}
+.rover-cta-container{
+  /* border: solid; */
+  display: block;
+  position: relative;
+  top: -440px;
+  width: 349px;
+}
+.rover-cta-container p {
+  font-size: 13px;
+  padding: -50px;
+}
+.rover-cta-container li{
+  font-size: 13px;
+  position: relative;
+  
+}
+.rover-cta a{
+  display: none;
+}
+.rover-cta2{
+  display: block;
+}
+.rover-cta2 a{
+  background-color: rgb(15, 199, 153);
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  position: relative;
+  left: 80px;
+}
+.rover-protections{
+  position: relative;
+  top: 0px;
+  left: -3px;
+}
+.rover-protections p{
+  font-size: 15px;
+}
+}
+
+
+/*-------- Part middle 2 -------*/
 .rover-action-shot{
   background-image: url("/img/lady-with-her-dogs.jpg");
   width: 1000px;
@@ -200,6 +332,28 @@ span{
 .quote{
   color: rgb(97, 91, 91);
 }
+@media screen and (max-width:500px){
+  .rover-action-shot{
+    position: relative;
+    left: 0px;
+    width: 400px;
+    height: 200px;
+    background-image: cover;
+  }
+  .rover-action-quote-container{
+    position: relative;
+    left: 0px;
+    top: -300px;
+    height: 200px;
+    width: 350px;
+  }
+  .rover-quote{
+    font-size: 15px;
+  }
+  
+}
+
+/* -------last part------------ */
 .rover-123-container-title{
   text-align: center;
   margin-top: 70px;
@@ -222,5 +376,17 @@ span{
 }
 .bottom{
   color: rgb(0, 91, 175);
+}
+
+@media screen and (max-width:500px){
+  .rover-123-item-container{
+    display: block;
+    /* border: solid; */
+    width: 200px;
+    
+  }
+  .box2{
+    width: 200px;
+  }
 }
 
